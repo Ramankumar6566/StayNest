@@ -1,0 +1,191 @@
+.property-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Image */
+
+.property-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.property-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.property-card:hover .property-image {
+  transform: scale(1.05);
+}
+
+
+/* Favorite */
+
+.favorite-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: white;
+  color: #222;
+
+  font-size: 24px;
+  cursor: pointer;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Available */
+
+.available-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  background: #ffffff;
+  color: #16a34a;
+
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* Content */
+
+.property-content {
+  padding: 18px;
+}
+
+.property-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.property-top h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.rating {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.property-location {
+  margin: 10px 0 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+.property-details {
+  margin: 5px 0;
+  color: #777;
+  font-size: 13px;
+}
+
+
+/* Amenities */
+
+.amenities {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.amenities span {
+  background: #f3f4f6;
+  padding: 5px 9px;
+  border-radius: 8px;
+
+  font-size: 11px;
+  color: #555;
+}
+
+
+/* Bottom */
+
+.property-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 15px;
+}
+
+.price strong {
+  font-size: 20px;
+  color: #111;
+}
+
+.price span {
+  font-size: 13px;
+  color: #777;
+}
+
+.view-btn {
+  border: none;
+  background: #ff385c;
+  color: white;
+
+  padding: 9px 16px;
+  border-radius: 9px;
+
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-btn:hover {
+  background: #e61e4d;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .property-image-wrapper {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-image-wrapper {
+    height: 200px;
+  }
+
+  .property-content {
+    padding: 14px;
+  }
+
+  .property-top h3 {
+    font-size: 16px;
+  }
+}
